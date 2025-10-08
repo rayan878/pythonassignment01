@@ -13,7 +13,7 @@ while True:
     categories.append(category)
     amounts.append(amount)
     
-    more = input("Do you want to add more? (yes/no): ").strip().lower()
+    more = input("Do you want to add more? (yes/no): ")
     if more != 'yes':
         break
 
@@ -30,3 +30,4 @@ for cat, amt in zip(categories, amounts):
 
 print(f"Total Expense: {total}")
 print(f"Average Expense: {average}")
+
